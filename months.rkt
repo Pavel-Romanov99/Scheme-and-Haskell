@@ -1,0 +1,15 @@
+(define (month x)(cond
+                   ((equal? x "january") (display "1"))
+                   ((equal? x "febuary") (display "2"))
+                   ((equal? x "march") (display "3"))
+                   ((equal? x "april") (display "4"))
+                   ((equal? x "may") (display "5"))
+                   ((equal? x "june") (display "6"))
+                   ((equal? x "july") (display "7"))
+                   ((equal? x "august") (display "8"))
+                   ((equal? x "september") (display "9"))
+                   ((equal? x "october") (display "10"))
+                   ((equal? x "november") (display "11"))
+                   ((equal? x "december") (display "12"))
+                   ))
+                   
