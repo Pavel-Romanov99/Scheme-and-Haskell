@@ -1,3 +1,4 @@
+;намира номера на подаден месец от годината;
 (define (month x)(cond
                    ((equal? x "january") (display "1"))
                    ((equal? x "febuary") (display "2"))
@@ -13,3 +14,21 @@
                    ((equal? x "december") (display "12"))
                    ))
                    
+;проверява дали х е корен на квадратното уравнение;
+(define (is-root? x)(if
+                     (zero? (- (- (* 3  (* x x)) (* 2 x)) 1)) #t
+                     #f
+                     ))
+
+;намира n!;
+(define (factoriel x)
+  (cond ((< x 0) #f)
+  ((<= x 1) 1)
+(else (* x (factoriel (- x 1))))))
+
+;fibonacci;
+(define (fibonacci x)
+  (cond ((equal? x  1) 1)
+        ((equal? x  2) 1)
+        (else (+ (fibonacci (- x 1)) (fibonacci (- x 2))))))
+
