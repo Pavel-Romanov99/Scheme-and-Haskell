@@ -32,3 +32,8 @@
         ((equal? x  2) 1)
         (else (+ (fibonacci (- x 1)) (fibonacci (- x 2))))))
 
+;за дадено число х връща х/2 ако х е четно, и х в противен случай;
+(define (safe-div x)
+  (if (zero? (remainder  x 2))
+      (/ x 2)
+      x))
